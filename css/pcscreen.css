@@ -496,6 +496,10 @@
 		text-align: right;
 		margin-right: 10%;
 	}
+	.txtlogo {
+		font-size: 1.2rem;
+		font-family: rotterdam;
+	}
 
 
 
@@ -536,9 +540,6 @@
 	}
 	#lupafiltro {
 		display: none;
-	}
-	.txtlogo {
-		font-size: 1.2rem;
 	}
 	#header{
 		display: none;

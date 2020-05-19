@@ -258,6 +258,7 @@
     .txtlogo{
         line-height: 65px;
         margin-bottom: 0;
+        font-family: rotterdam;
     }
     #continue{
         width: 80%;
