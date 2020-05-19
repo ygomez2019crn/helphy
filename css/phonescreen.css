@@ -626,6 +626,13 @@
         margin-top: 10px;
 		color: #848484;
     }
+    #logotexto{
+		width: 70%;
+		height: 150px;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin:0 auto
+	}
 
     /* google maps*/
 

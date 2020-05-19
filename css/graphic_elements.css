@@ -162,7 +162,9 @@
 }
 #imgpresentacion_2{
     background-image: url(../img/presentacion.jpg);
-
+}
+#logotexto{
+    background-image: url(../img/logotxt.svg);
 }
 
 
