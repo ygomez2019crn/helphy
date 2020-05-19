@@ -542,7 +542,6 @@
         background-color: red;
         background-size: cover;
         background-position: center;
-        margin-top: 100px;
     }
     #imgpresentacion_2{
         width: 100%;
@@ -642,7 +641,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		z-index: 10;
+		z-index: -10;
 	}
 	.map-container iframe {
 		left: 0;
