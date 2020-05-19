@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/phonescreen.css">
+    <link rel="stylesheet" href="../css/graphic_elements.css">
+    <link rel="stylesheet" href="../css/pcscreen.css">    
+    <link rel="stylesheet" href="../css/inputranger.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2EDA94">
+    <meta name="theme-color" content="re#2EDA94d">
+    <meta name="msapplication-navbutton-color" content="#2EDA94">
+    <link rel="icon" sizes="192x192" href="../img/logo.svg">
+    <link rel="icon" sizes="512x512" href="../img/logo.png">
+    <link rel="apple-touch-icon" href="../img/logo.svg">
+</head>
+
+<body>
+    <div id="header_pc">
+        <div id=logo></div>
+        <a href="login.html">
+            <h4 class="txtheader">LOG IN</h4>
+        </a>
+        <a href="checkout.html">
+            <h4 class="txtheader">CART</h4>
+        </a>
+        <a href="alimentos.html">
+            <h4 class="txtheader">PRODUCTS</h4>
+        </a>
+    </div>
+
+    <div id="optionheader">
+        <h1 id="carttxt">Options</h1>
+        <a href="alimentos.html">
+            <div id="cross"></div>
+        </a>
+    </div>
+
+
+    <a href="mapoption.html">
+        <div class="container_options">
+            <div class="arrowicon" id="arrowdown"></div>
+            <h2 class="optionstxtbig">Change ubication</h2>
+            <p class="subtxt">Cornella</p>
+            
+        </div>
+    </a>
+
+    <div class="rayaoption"></div>
+
+    <div class="container_options">
+        <h2 class="optionstxtbig">Distance</h2>
+        <p class="subtxt">Change the distance to see farmers near you</p>
+        <input type="range" id="tirador_distancia" min="1" max="100" value="50">
+        <p class="subtxt_right"><span id="rangernumber">50</span> Km</p>
+
+    </div>
+
+    <div class="rayaoption"></div>
+
+    <a href="login.html" class="clickable">
+        <div class="container_options">
+            <div class="arrowicon"></div>
+            <h2 class="optionstxtbig">Log in</h2>
+
+        </div>
+    </a>
+
+    <div class="rayaoption"></div>
+
+    <a href="aboutus.html">
+        <div class="container_options">
+            <div class="arrowicon"></div>
+            <h2 class="optionstxtbig">About us</h2>
+        </div>
+    </a>
+
+
+
+</body>
+<script src="../js/ranger.js"></script>
+
+</html>

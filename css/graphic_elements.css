@@ -1,0 +1,288 @@
+
+/*iconos*/
+
+#lupa{
+    background-image: url(../img/lupa.svg);
+    background-size: 30px;
+}
+#granjero{
+    background-image: url(../img/granjero.svg);
+}
+#carrito{
+    background-image: url(../img/carrito.svg);
+}
+#granjeroactivado{
+    background-image: url(../img/granjeroactivado.svg);
+}
+#lupaactivado{
+    background-image: url(../img/lupaactivado.svg);
+}
+#carritoactivado{
+    background-image: url(../img/carritoactivado.svg);
+    margin-top: 3px;
+}
+#lupafiltro{
+    height: 20px;
+    width: 20px;
+    top:27px;
+    background-image: url(../img/lupa.svg);
+    background-size: cover;
+    opacity: 50%;
+    position: absolute;
+    left: 2.5%;
+}
+#triangulo{
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid black;
+    float: right;
+    margin-right: 10px;
+    margin-top: 9px;
+    rotate: 0deg;
+}
+#thrashcan{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/thrashcan.svg);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 7%;
+    z-index: 10;
+}
+#up{
+    background-image: url(../img/mas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    opacity: 80%;
+}
+#down{
+    background-image: url(../img/menos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    opacity: 80%;
+}
+#hamburgermenu{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/hamburgermenu.svg);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    z-index: 10;
+}
+#hamburgermenu_blanco{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/hamburgermenublanco.svg);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 14px;
+    margin-right: 4%;
+    float: right;
+}
+#flecha{
+    background-image: url(../img/flecha.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    margin-left: 7%;
+    float: left;
+}
+.arrowicon{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 7%;
+    background-image: url(../img/flecha2.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+#flechaverde{
+    background-image: url(../img/flechaverde.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-left: 7%;
+    float: left;
+}
+#flechaverde_2{
+    background-image: url(../img/flechaverde.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-left: 7%;
+}
+#cross{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 5%;
+    background-image: url(../img/cross.svg);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+/* imagenes*/
+#ubicationicon{
+    width: 18px;
+    height: 30px;
+    float: left;
+    margin-left: 7%;
+    margin-right: 10px;
+    background-image: url(../img/ubication.svg);
+    background-size: cover;
+}
+#logo{
+    background-image: url(../img/logo.svg);
+}
+#imgpresentacion{
+    background-image: url(../img/presentacion.jpg);
+}
+#imgpresentacion_2{
+    background-image: url(../img/presentacion.jpg);
+
+}
+
+
+
+
+#apricots{
+    background-image: url(../img/apricots.jpg);
+    background-position: center;
+    }
+    #cherries{
+    background-image: url(../img/cherries.jpg);
+    }
+    #figs{
+    background-image: url(../img/figs.jpg);
+    }
+    #raspberry{
+    background-image: url(../img/raspberry.jpg);
+    background-position: center;
+    }
+    #lemons{
+    background-image: url(../img/lemons.jpg);
+    background-position: center;
+    }
+    #strawberries{
+    background-image: url(../img/strawberries.jpg);
+    background-position: center;
+    }
+    #pomegranates{
+    background-image: url(../img/pomegranates.jpg);
+    }
+    #tangerines{
+    background-image: url(../img/tangerines.jpg);
+    }
+    #pears{
+    background-image: url(../img/pears.jpg);
+    }
+    #apples{
+    background-image: url(../img/apples.jpg);
+    }
+    #peaches{
+    background-image: url(../img/peaches.jpg);
+    }
+    #plums{
+    background-image: url(../img/plums.jpg);
+    }
+    #grape{
+    background-image: url(../img/grape.jpg);
+    }
+    #oranges{
+    background-image: url(../img/oranges.jpg);
+    }
+    #eggplants{
+    background-image: url(../img/eggplants.jpg);
+    }
+    #broccoli{
+    background-image: url(../img/broccoli.jpg);
+    }
+    #pumpkins{
+    background-image: url(../img/pumpkins.jpg);
+    }
+    #artichokes{
+    background-image: url(../img/artichokes.jpg);
+    }
+    #onions{
+    background-image: url(../img/onions.jpg);
+    }
+    #cucumbers{
+    background-image: url(../img/cucumbers.jpg);
+    }
+    #cabbage{
+    background-image: url(../img/cabbage.jpg);
+    }
+    #lettuce{
+    background-image: url(../img/lettuce.jpg);
+    background-position: center;
+    }
+    #asparagus{
+    background-image: url(../img/asparagus.jpg);
+    }
+    #spinach{
+    background-image: url(../img/spinach.jpg);
+    }
+    #beans{
+    background-image: url(../img/beans.jpg);
+    }
+    #carrots{
+    background-image: url(../img/carrots.jpg);
+    }
+    #potatoes{
+    background-image: url(../img/potatoes.jpg);
+    }
+    #peppers{
+    background-image: url(../img/peppers.jpg);
+    }
+    #leeks{
+    background-image: url(../img/leeks.jpg);
+    }
+    #raves{
+    background-image: url(../img/raves.jpg);
+    }
+    #tomatoes{
+    background-image: url(../img/tomatoes.jpg);
+    }
+    #rice{
+    background-image: url(../img/rice.jpg);
+    }
+    #cheeses{
+    background-image: url(../img/cheeses.jpg);
+    }
+    #milk{
+    background-image: url(../img/milk.jpg);
+    }
+    #honey{
+    background-image: url(../img/honey.jpg);
+    background-position: center;
+    }
+    #oil{
+    background-image: url(../img/oil.jpg);
+    }
+    #eggs{
+    background-image: url(../img/eggs.jpg);
+    }
+    

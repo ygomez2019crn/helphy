@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/phonescreen.css">
+    <link rel="stylesheet" href="../css/graphic_elements.css">
+    <link rel="stylesheet" href="../css/pcscreen.css">
+    <script src="../script.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2EDA94">
+    <meta name="theme-color" content="re#2EDA94d">
+    <meta name="msapplication-navbutton-color" content="#2EDA94">
+    <link rel="icon" sizes="192x192" href="../img/logo.svg">
+    <link rel="icon" sizes="512x512" href="../img/logo.png">
+    <link rel="apple-touch-icon" href="../img/logo.svg">
+</head>
+
+<body>
+
+    <div id="header_pc">
+        <div id=logo></div>
+        <a href="options.html">
+            <h4 class="txtheader">OPTIONS</h4>
+        </a>
+        <a href="login.html">
+            <h4 class="txtheader">LOG IN</h4>
+        </a>
+        <a href="checkout.html">
+            <h4 class="txtheader">CART</h4>
+        </a>
+    </div>
+
+    <div id="tarjeta-tuto">
+        <p id="txttuto">Start by selecting some products to see the farmers near you.</p>
+        <div id="button-popup" onclick="dismisstut()">
+            <p id="hide">Start selecting</p>
+            <p id="hide_2">Got it!</p>
+        </div>
+    </div>
+
+    <div id="popup-tuto"></div>
+
+    <div id="header">
+        <i id="lupafiltro"></i>
+        <input type="text" id="filtro" onkeyup="funcionfiltro()" placeholder="What are you gonna order today?">
+        <a href="../html/options.html"><div id="hamburgermenu_blanco"></div></a>
+    </div>
+
+    <div id="header_pc_2">
+        <input type="text" id="filtroPc" onkeyup="funcionfiltroPc()" placeholder="What are you gonna order today?">
+    </div>
+
+    <div id="selectorfiltro" onclick="dropdown()">
+        <p id="allselector">Filter by</p>
+        <div id="triangulo"></div>
+    </div>
+
+    <div id="dropdown">
+        <p id="vegetal" onclick="select('verduras')">Vegetables</p>
+        <div class="raya"></div>
+        <p id="fruta" onclick="select('fruta')">Fruits</p>
+        <div class="raya"></div>
+        <p id="all" onclick="select('otros')">Others</p>
+        <div class="raya"></div>
+        <p id="all" onclick="select('all')">All</p>
+    </div>
+
+    <!-- LISTA DE PRODUCTOS -->
+
+    <div id="lista">
+
+        <!-- frutas -->
+
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('apricots')">
+                <div class="imagen fruta" id="apricots"></div>
+                <p class="alimento">Apricots</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('cherries')">
+                <div class="imagen fruta" id="cherries"></div>
+                <p class="alimento">Cherries</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('figs')">
+                <div class="imagen fruta" id="figs"></div>
+                <p class="alimento">Figs</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('raspberry')">
+                <div class="imagen fruta" id="raspberry"></div>
+                <p class="alimento">Raspberry</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('lemons')">
+                <div class="imagen fruta" id="lemons"></div>
+                <p class="alimento">Lemons</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('strawberries')">
+                <div class="imagen fruta" id="strawberries"></div>
+                <p class="alimento">Strawberries</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+                <span class="tarjeta" onclick="seleccionarAlimentos('pomegranates')">
+                <div class="plantilla">
+                <div class="imagen fruta" id="pomegranates"></div>
+                <p class="alimento">Pomegranates</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('tangerines')">
+                <div class="imagen fruta" id="tangerines"></div>
+                <p class="alimento">Tangerines</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('pears')">
+                <div class="imagen fruta" id="pears"></div>
+                <p class="alimento">Pears</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('apples')">
+                <div class="imagen fruta" id="apples"></div>
+                <p class="alimento">Apples</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('peaches')">
+                <div class="imagen fruta" id="peaches"></div>
+                <p class="alimento">Peaches</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('plums')">
+                <div class="imagen fruta" id="plums"></div>
+                <p class="alimento">Plums</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('grape')">
+                <div class="imagen fruta" id="grape"></div>
+                <p class="alimento">Grape</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+                <div class="plantilla" onclick="seleccionarAlimentos('oranges')">
+                <div class="imagen fruta" id="oranges"></div>
+                <p class="alimento">Oranges</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        
+        
+        <!-- verduras -->
+        
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('eggplants')">
+                <div class="imagen verduras" id="eggplants"></div>
+                <p class="alimento">Eggplants</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('pumpkins')">
+                <div class="imagen verduras" id="pumpkins"></div>
+                <p class="alimento">Pumpkins</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('artichokes')">
+                <div class="imagen verduras" id="artichokes"></div>
+                <p class="alimento">Artichokes</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('onions')">
+                <div class="imagen verduras" id="onions"></div>
+                <p class="alimento">Onions</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('cucumbers')">
+                <div class="imagen verduras" id="cucumbers"></div>
+                <p class="alimento">Cucumbers</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('cabbage')">
+                <div class="imagen verduras" id="cabbage"></div>
+                <p class="alimento">Cabbage</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('lettuce')">
+                <div class="imagen verduras" id="lettuce"></div>
+                <p class="alimento">Lettuce</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('asparagus')">
+                <div class="imagen verduras" id="asparagus"></div>
+                <p class="alimento">Asparagus</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('spinach')">
+                <div class="imagen verduras" id="spinach"></div>
+                <p class="alimento">Spinach</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('beans')">
+                <div class="imagen verduras" id="beans"></div>
+                <p class="alimento">Beans</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('carrots')">
+                <div class="imagen verduras" id="carrots"></div>
+                <p class="alimento">Carrots</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('potatoes')">
+                <div class="imagen verduras" id="potatoes"></div>
+                <p class="alimento">Potatoes</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('peppers')">
+                <div class="imagen verduras" id="peppers"></div>
+                <p class="alimento">Peppers</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('leeks')">
+                <div class="imagen verduras" id="leeks"></div>
+                <p class="alimento">Leeks</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('raves')">
+                <div class="imagen verduras" id="raves"></div>
+                <p class="alimento">Raves</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+            <div class="plantilla" onclick="seleccionarAlimentos('tomatoes')">
+               <div class="imagen verduras" id="tomatoes"></div>
+               <p class="alimento">Tomatoes</p>
+               <p class="ubicacion">8 km</p>
+           </div>
+       </span>
+        
+        
+        <!-- otros -->
+        
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('rice')">
+                <div class="imagen otros" id="rice"></div>
+                <p class="alimento">Rice</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('cheeses')">
+                <div class="imagen otros" id="cheeses"></div>
+                <p class="alimento">Cheeses</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('milk')">
+                <div class="imagen otros" id="milk"></div>
+                <p class="alimento">Milk</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('honey')">
+                <div class="imagen otros" id="honey"></div>
+                <p class="alimento">Honey</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('oil')">
+                <div class="imagen otros" id="oil"></div>
+                <p class="alimento">Oil</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+        <span class="tarjeta">
+             <div class="plantilla" onclick="seleccionarAlimentos('eggs')">
+                <div class="imagen otros" id="eggs"></div>
+                <p class="alimento">Eggs</p>
+                <p class="ubicacion">8 km</p>
+            </div>
+        </span>
+    </div>
+
+    <!--fin de la lista-->
+
+
+    <div id="footer">
+        <div class="iconofoot" id="lupaactivado"></div>
+        <a href="granjeros.html">
+            <div class="iconofoot" id="granjero"></div>
+        </a>
+        <div id="bolita"></div>
+        <a href="checkout.html" >
+            <div class="iconofoot" id="carrito"></div>
+        </a>
+    </div>
+
+
+    <a href="#container_granjeros">
+        <div id="boton_pc" onclick=desplegablegranjeros()>
+            <p id="txtboton">Select a few products to see the nearest farmers</p>
+        </div>
+    </a>
+
+    <div id="container_granjeros">
+        <h1>Farmers near</h1>
+        <div class="plantillagranjero">
+            <p class="nombregranjero">Name: Santi Navarro Gomez</p>
+            <p class="txtnormal">Brand: e.a. mas de baix s.l.</p>
+            <p class="txtnormal">From: Tivissa (Ribera d’Ebre)</p>
+            <p class="txtnormal">Fruits: apricots, figs, pomegranates, pomegranates, apples</p>
+            <a href="granjeros/santinavarro.html">
+                <p class="seemore">See more</p>
+            </a>
+        </div>
+        <div class="plantillagranjero">
+            <p class="nombregranjero">Name: PERE TUGAS VALLÈS</p>
+            <p class="txtnormal">Brand: TUGAS I COMPANYIA</p>
+            <p class="txtnormal">From: VILADECANS (Baix Llobregat)</p>
+            <p class="txtnormal">Fruits: Peaches, plums, grapes, pears, lemons</p>
+            <p class="txtnormal">Vegetables: eggplants, broccoli, artichokes, cabbage, lettuce, spinach, beans</p>
+            <a href="granjeros/peretugas.html">
+                <p class="seemore">See more</p>
+            </a>
+        </div>
+        <div class="plantillagranjero">
+            <p class="nombregranjero">Name: RAFAEL MURIA</p>
+            <p class="txtnormal">Brand: Mel Muria</p>
+            <p class="txtnormal">From: EL PERELLÓ (Baix Ebre)</p>
+            <p class="txtnormal">Others: honey</p>
+            <a href="granjeros/rafaelmuria.html">
+                <p class="seemore">See more</p>
+            </a>
+        </div>
+        <div class="plantillagranjero">
+            <p class="nombregranjero">Name: Francesc Marquilles Vidal</p>
+            <p class="txtnormal">Brand: Formatges Monber</p>
+            <p class="txtnormal">From: Agramunt (Urgell)</p>
+            <p class="txtnormal">Fruits: apples, pears, pomegranates</p>
+            <p class="txtnormal">Others: cheeses, milk</p>
+            <a href="granjeros/francescmarquilles.html">
+                <p class="seemore">See more</p>
+            </a>
+        </div>
+        <div class="plantillagranjero">
+            <p class="nombregranjero">Name: Joan Raventós Millaret</p>
+            <p class="txtnormal">Brand: Fruita ECOLÒGICA J.Raventós Millaret</p>
+            <p class="txtnormal">From: Els Hostalets de Pierola (Anoia)</p>
+            <p class="txtnormal">Fruits: raspberry, strawberries, grape</p>
+            <p class="txtnormal">Vegetables: tomatoes, peppers, potatoes, spinach</p>
+            <a href="granjeros/joanraventos.html">
+                <p class="seemore">See more</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
