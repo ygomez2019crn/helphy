@@ -257,6 +257,7 @@
     }
     .txtlogo{
         line-height: 65px;
+        margin-bottom: 0;
     }
     #continue{
         width: 80%;
@@ -381,9 +382,9 @@
         max-height: 100000px;
         border-radius: 7px; 
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-        margin-bottom: 100px;
+        margin-bottom: 30px;
         padding-bottom: 2px;
-        margin-top: 10px;
+
     }
     .alimentos{
         width: 100%;
@@ -627,26 +628,32 @@
 
     /* google maps*/
 
-.map-container{
-    position:absolute;
-    top:75px;
-    bottom: 60px;
-    left: 0;
-    right: 0;
-    }
-.map-container iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
-.local_granjero{
-    width: 86%;
-    margin: 0 auto;
-    height: 275px;
-    background-color: red;
-}
+	.map-container {
+		position: absolute;
+		top: 75px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+	}
+	.map-container iframe {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+	.map-container2 {
+		margin: 0 auto;
+		width: 100%;
+
+	}
+	.map-container2 iframe {
+		height: 300px;
+		width: 100%;
+	}
+
+
 
     /* Display none pc viewport*/
 
